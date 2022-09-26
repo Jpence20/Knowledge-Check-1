@@ -40,7 +40,20 @@ switch (input)
         break;
 
     case "3":
-        // Add code here
+        Console.WriteLine("Enter 2 integers to multiply");
+        var multiplyNumbers1 = Console.ReadLine();
+        var multiplyNumbers2 = Console.ReadLine();
+
+        if (int.TryParse(multiplyNumbers1, out int multNumOne) && int.TryParse(multiplyNumbers2, out int multNumTwo))
+        {
+            Console.Write($"{multiplyNumbers1} * {multiplyNumbers2} = ");
+            Console.Write(calculator.Multiply(multNumOne, multNumTwo));
+        }
+        else
+        {
+            Console.WriteLine("One or more of the numbers is not an int");
+        }
+        break;
         break;
 
     case "4":
