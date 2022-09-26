@@ -20,7 +20,7 @@ namespace KnowledgeCheck1_Calculator
 
         public double Multiply(double first, double second)
         {
-            return first * second;
+            return first * second; 
         }
 
         public double Divide(double first, double second)

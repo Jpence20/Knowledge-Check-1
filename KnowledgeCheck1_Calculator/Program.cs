@@ -48,6 +48,7 @@ switch (input)
         {
             Console.Write($"{multiplyNumbers1} * {multiplyNumbers2} = ");
             Console.Write(calculator.Multiply(multNumOne, multNumTwo));
+
         }
         else
         {
